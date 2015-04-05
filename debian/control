@@ -1,0 +1,13 @@
+Source: z3
+Section: math
+Priority: optional
+Maintainer: Madars Virza <madars@mit.edu>
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), python2.7, python-minimal, build-essential
+Homepage: https://github.com/Z3Prover/z3
+
+Package: z3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Z3 is a theorem prover
+ Z3 is a high-performance theorem prover from Microsoft Research.

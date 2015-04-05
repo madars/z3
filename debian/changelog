@@ -1,0 +1,8 @@
+z3 (4.3.2-1) unstable; urgency=low
+
+  * Initial release based on upstream cee7dd39444c9060186df79c2a2c7f8845de415b
+    as per https://z3.codeplex.com/SourceControl/list/changesets
+    More precisely,
+    https://github.com/Z3Prover/z3/archive/cee7dd39444c9060186df79c2a2c7f8845de415b.tar.gz
+
+ -- Madars Virza <madars@mit.edu>  Sat, 04 Apr 2015 18:04:28 +0500
