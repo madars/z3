@@ -1,5 +1,5 @@
 diff --git a/scripts/mk_util.py b/scripts/mk_util.py
-index 4641a7b..0dc6aa1 100644
+index 4641a7b..3c5e614 100644
 --- a/scripts/mk_util.py
 +++ b/scripts/mk_util.py
 @@ -79,6 +79,9 @@ VS_PAR_NUM=8
@@ -78,3 +78,12 @@ index 4641a7b..0dc6aa1 100644
      for c in get_components():
          c.mk_install(out)
      out.write('\t@cp z3*.py %s\n' % PYTHON_PACKAGE_DIR)
+@@ -1659,7 +1663,7 @@ def mk_install(out):
+         else:
+             LD_LIBRARY_PATH = "LD_LIBRARY_PATH"
+         out.write('\t@echo Z3 shared libraries were installed at \'%s\', make sure this directory is in your %s environment variable.\n' %
+-                  (os.path.join(PREFIX, 'lib'), LD_LIBRARY_PATH))
++                  (os.path.join('$(DESTDIR)', '$(PREFIX)', 'lib'), LD_LIBRARY_PATH))
+         out.write('\t@echo Z3Py was installed at \'%s\', make sure this directory is in your PYTHONPATH environment variable.' % PYTHON_PACKAGE_DIR)
+     out.write('\n')
+ 
